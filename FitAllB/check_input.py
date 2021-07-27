@@ -573,7 +573,7 @@ class parse_input:
         for j in range(len(self.int)):
 
             if self.int[j] > 0:
-                if intmax[j] > 2**16-2*self.fit['bg']:# and intmax[j]*pixels[j]/self.int[j] < 8.:
+                if intmax[j] > 2**20-2*self.fit['bg']:# and intmax[j]*pixels[j]/self.int[j] < 8.:
                     self.Sww[j] = -10
                 else:
                     if sigw[j] > 1:
